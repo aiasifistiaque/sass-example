@@ -1,0 +1,77 @@
+/** @format */
+@import '../variables';
+
+@mixin btn-normal($color, $color-light) {
+  color: $white;
+  background-color: $color;
+  border: 1px solid $color;
+  width: 15vw;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+  &:hover {
+    background-color: $color-light;
+    color: $color;
+    //opacity: 0.6;
+  }
+  &:after {
+    border: 1px solid $color;
+  }
+}
+
+@mixin btn-outlined($color, $color-light) {
+  @include btn-normal($color, $color-light);
+  border: 1px solid $color-light;
+  color: $color-light;
+  background-color: white;
+  &:hover {
+    color: $white;
+    opacity: 0.9;
+  }
+}
+
+@mixin hover-color($color) {
+  &:hover {
+    color: $color;
+    opacity: 0.9;
+  }
+}
+
+/* nomal buttons */
+.button-primary {
+  @include btn-normal($primary, $primary-light);
+}
+
+.button-danger {
+  @include btn-normal($danger, $danger-light);
+}
+
+.button-success {
+  @include btn-normal($success, $success-light);
+}
+
+/* outlined buttons */
+.button-primary-outlined {
+  @include btn-outlined($primary-light, $primary);
+}
+
+.button-primary-block {
+  @include btn-normal($primary, $primary-dark);
+  @include hover-color($white);
+  width: 90%;
+}
+
+.button-danger-block {
+  @include btn-normal($danger, $danger-light);
+  width: 90%;
+}
+
+.button-success-block {
+  @include btn-normal($success, $success-light);
+  width: 100%;
+
+  color: $white;
+}

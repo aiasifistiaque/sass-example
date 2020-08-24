@@ -1,0 +1,38 @@
+/** @format */
+
+.custom-header {
+  background-color: $primary;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-item {
+  color: $white;
+  margin: 0px 10px;
+  &:hover {
+    background-color: whitesmoke;
+    color: $primary;
+  }
+}
+
+.header-button {
+  background-color: $danger;
+  padding: 10px 40px;
+  border-color: $danger;
+  color: $white;
+  text-align: center;
+
+  border: 1px solid $danger;
+  border-radius: 6px;
+  margin: 0px 20px;
+  &:hover {
+    background-color: $danger-dark;
+    border-color: $danger-dark;
+  }
+}

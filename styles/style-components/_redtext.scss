@@ -1,0 +1,26 @@
+/** @format */
+
+.redtext {
+  color: whitesmoke;
+  background-color: $primary;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  @media only screen and (max-width: $small) {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  @media only screen and (min-width: $small) {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: $danger;
+  }
+  @media only screen and (min-width: $medium) {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 25px;
+    background-color: $success;
+  }
+}

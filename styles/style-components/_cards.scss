@@ -1,0 +1,66 @@
+/** @format */
+@import '../variables';
+
+$cardBorderRadius: 5px;
+
+@mixin cardflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-container {
+  @include cardflex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+@mixin card-basic {
+  @include cardflex;
+  border: 1px solid $card-border;
+  border-radius: $cardBorderRadius;
+  flex: 1;
+  margin: 20px;
+  flex-direction: column;
+  min-width: 250px;
+  text-align: justify;
+  padding-bottom: 30px;
+  align-items: flex-start;
+}
+
+.card-rounded {
+  @include card-basic;
+}
+
+.card-elevated {
+  @include card-basic;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+  font-size: 23px;
+  @include card-padding;
+  opacity: 0.9;
+}
+
+.card-text {
+  font-size: 13px;
+  @include card-padding;
+  margin: 0;
+  padding-bottom: 15px;
+  opacity: 0.8;
+}
+
+.card-image {
+  object-fit: contain;
+  border-radius: $cardBorderRadius $cardBorderRadius 0px 0px;
+  width: 100%;
+  padding: 0;
+}

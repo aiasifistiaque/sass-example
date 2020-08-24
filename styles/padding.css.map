@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,cAAc;AAEd,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "padding.scss"
+    ],
+    "names": [],
+    "file": "padding.css"
+}

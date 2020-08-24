@@ -1,0 +1,31 @@
+/** @format */
+@import 'variables';
+
+@mixin container-basic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-center-column {
+  @include container-basic;
+  flex-direction: column;
+}
+
+.container-center-row {
+  @include container-basic;
+  flex-direction: row;
+}
+
+.container-fullscreen {
+  @include container-basic;
+  width: 100%;
+  height: 98vh;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.container {
+  @include container-basic;
+  flex-direction: column;
+}
